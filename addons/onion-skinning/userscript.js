@@ -584,10 +584,6 @@ export default async function ({ addon, console, msg }) {
   settingButton.title = msg("settings");
   settingButton.appendChild(createButtonImage("settings"));
 
-  document.body.addEventListener("click", (e) => {
-    if (areSettingsOpen() && !e.target.matches(".sa-onion-settings *")) setSettingsOpen(false);
-  });
-
   //
   // Settings page
   //
